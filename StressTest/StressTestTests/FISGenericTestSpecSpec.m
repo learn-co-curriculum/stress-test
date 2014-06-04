@@ -16,10 +16,6 @@ SpecBegin(FISGenericTestSpec)
 
 describe(@"FISGenericTestSpec", ^{
     
-    beforeAll(^{
-
-    });
-    
     describe(@"our generic tests; let's make them pass! Ignore the back-slashes in the below code, those are there so i can still use obj-c syntax in an NSString", ^{
         describe(@"let's work with the beKindOf matcher!", ^{
             it(@"create an NSString and test that it is kind of class NSString",^{
