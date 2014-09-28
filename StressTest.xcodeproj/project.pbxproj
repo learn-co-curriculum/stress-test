@@ -33,7 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6FB4A92A1FF145EFB74CC010 /* Pods-StressTestTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StressTestTests.xcconfig"; path = "Pods/Pods-StressTestTests.xcconfig"; sourceTree = "<group>"; };
+		65D185CC6A93251A34FF7103 /* Pods-StressTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StressTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StressTestTests/Pods-StressTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		72AE7E6C193F655C00A26365 /* StressTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StressTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72AE7E6F193F655C00A26365 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		72AE7E71193F655C00A26365 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -51,6 +51,7 @@
 		72AE7E92193F655C00A26365 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		72AE7E9E193F65DE00A26365 /* FISGenericTestSpecSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISGenericTestSpecSpec.m; sourceTree = "<group>"; };
 		92E5DFB97C714CF8ABF11F58 /* libPods-StressTestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StressTestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95058A8F0068977906DAC771 /* Pods-StressTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StressTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StressTestTests/Pods-StressTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +86,7 @@
 				72AE7E8E193F655C00A26365 /* StressTestTests */,
 				72AE7E6E193F655C00A26365 /* Frameworks */,
 				72AE7E6D193F655C00A26365 /* Products */,
-				6FB4A92A1FF145EFB74CC010 /* Pods-StressTestTests.xcconfig */,
+				BA3B515FF66BD3528C1ABEFB /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,6 +149,15 @@
 				72AE7E91193F655C00A26365 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BA3B515FF66BD3528C1ABEFB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				95058A8F0068977906DAC771 /* Pods-StressTestTests.debug.xcconfig */,
+				65D185CC6A93251A34FF7103 /* Pods-StressTestTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,7 +281,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-StressTestTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StressTestTests/Pods-StressTestTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -422,7 +432,7 @@
 		};
 		72AE7E9C193F655C00A26365 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6FB4A92A1FF145EFB74CC010 /* Pods-StressTestTests.xcconfig */;
+			baseConfigurationReference = 95058A8F0068977906DAC771 /* Pods-StressTestTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/StressTest.app/StressTest";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -445,7 +455,7 @@
 		};
 		72AE7E9D193F655C00A26365 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6FB4A92A1FF145EFB74CC010 /* Pods-StressTestTests.xcconfig */;
+			baseConfigurationReference = 65D185CC6A93251A34FF7103 /* Pods-StressTestTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/StressTest.app/StressTest";
 				FRAMEWORK_SEARCH_PATHS = (
