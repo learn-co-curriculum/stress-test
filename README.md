@@ -37,3 +37,23 @@ parentheses after the beTruthy() method call above? The compiler will not compla
 
 ###Reading
 all the matchers we will use and more info on testing syntax can be found [here](https://github.com/specta/expecta) in the docs
+
+##Instructions
+1. Open up your StressTest.xcworkspace file
+2. Take a look at your `FISGenericTestSpecSpec.m` in the StressTestTests group
+   in Xcode.
+3. You should notice several things in our Spec file:
+  - Our outermost `describe` block gives you the name of our Spec, in this case
+    `FISGenericTestSpec`. This is typically the name of the file you are
+    testing. As we are testing Apple's code, we're just going to call these
+    tests generic.
+  - Inside our outermost describe block, we have another describe block. This
+    tell you what you can expect out of the tests below. Here we have our basic
+    instructions to write our generic tests based on how they're being
+    described.
+    - each describe block in here will cover one type of 'matcher', like equal
+      or notEqual. You can read more about the matchers we'll be using in the
+      Reading section above.
+    - each describe block may have several `it` blocks that explain what the
+      code inside should be proving. All of the `it` blocks tell you to write
+      your code inside of them.
