@@ -54,3 +54,5 @@ all the matchers we will use and more info on testing syntax can be found [here]
     - each describe block may have several `it` blocks that explain what the
       code inside should be proving. All of the `it` blocks tell you to write
       your code inside of them.
+
+<a href='https://learn.co/lessons/stress-test' data-visibility='hidden'>View this lesson on Learn.co</a>
